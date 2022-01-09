@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Marcos Alexandre by @marcos4lex</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+	    <link rel="shortcut icon" href="img/icon.png">
+	    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	</head>
+
+
+
+				<!-- NAVEVAÇÃO -->
+	<body>
+		
+		<header>
+			<div class="main-nav">
+				<div class="container">
+					<nav class="navbar">
+						<ul>
+							<li class="ativo"><a href="#sobre">Sobre</a></li>
+							<li><a href="#experiencias">Experiências</a></li>
+							<li><a href="#habilidades">Habilidades</a></li>
+							<li><a href="#projetos">Projetos</a></li>
+					        <li><a href="#contatos">Contate-me</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+						
+		</header>
+
+
+
+		<main>
+				<!-- INTRODUÇÃO -->
+			<section class="container separador" id="sobre">
+				<div class="avatar">
+					<img src="img/avatar.jpg" alt="avatar">
+				</div>
+
+				<div class="welcome">
+					<h1>Sejam bem vindos!<br><span id="typed"></span></h1>
+				</div>
+					<p>
+						Venho colecionando conhecimento técnico desde meus 14 anos, aprendendo na prática a utilizar sistemas Linux e Windows. já participei de feiras sobre segurança da informação, bootcamps sobre front-end, e muito mais. Até trabalhar como técnico em informática aos 19 anos. Então iniciei minha graduação no início do ano de 2021 afim de profissionalizar todo esse conhecimento, e hoje tenho projetos contínuos em Linguagem C e Webdesign.
+					</p>
+			</section>
+			
+
+
+				<!--EXPERIENCIAS-->
+			<section class="container separador" id="experiencias">
+				<h1>Experiências</h1><br>
+				<ul class="lista-trabalho">
+					<li>2014-2019</li>
+					<li><a href="#">Tec. em Informática</a></li><br>
+				</ul>
+				<p>
+					Atividades Realizadas:<br>
+					Gerenciamento de compra e venda de hardware pelo Excel.
+					Reparo de desktops e notebooks, realizando troca de hardware defeituoso e instalação de programas.
+					Diagnóstico de problemas no sistema e remoção de programas maliciosos.
+					Orientação de clientes sobre cuidados preventivos e manutenção regular para evitar falhas de funcionamento do sistema.
+					Instalação de sistemas Windows e Linux.
+				</p>
+			</section>
+			
+
+
+				<!-- HABILIDADES TECNICAS -->
+			<section class="container separador" id="habilidades">
+				<h1>Habilidades<br>Técnicas</h1>
+				<ul class="lista-habilidades">
+					<li>Tecnologias Web</li>
+					<p>HTML / CSS / Javascript</p><br><br>
+					
+					<li>Banco de Dados</li>
+					<p>MySQL / PostgreSQL</p><br><br>
+					
+					<li>Back-End</li>
+					<p>Linguagem C</p><br><br>
+					
+					<li>Outras</li>
+					<p>Comandos de navegação no terminal Linux<br>
+					Montagem e manutenção de desktops</p>		
+				</ul>
+			</section>
+
+
+
+				<!-- PROJETOS -->
+			<section class="container separador" id="projetos">
+				<ul class="lista-projetos">
+					<h1>Projetos</h1>
+					<li>Site Portfólio</li>
+					<p>A produção deste site faz parte do meu primeiro projeto após concluir muitas aulas da faculdade. Ele foi projetado usando HTML e CSS básicos e um pouquinho de Javascript.</p><br><br>
+
+					<li>Sheldon Mania</li>
+					<p>Por ser muito fã da serie de tv The Bigbang Theory, decidi fazer algo que remetesse a serie. Um jogo feito na Linguagem C, mas idealizado por Sam Kass (jogado pelos participantes da serie), o jogo Pedra-papel-tesoura-lagarto-Spock é uma expansão do clássico método de seleção em jogo de pedra-papel-tesoura. Atua sob o mesmo princípio básico, mas inclui outras duas armas adicionais: o lagarto e Spock.</p><br><br>
+
+					<li>Calculadora</li>
+					<p>Já é sabido que é muito comum no mundo da programação treinar a criação de calculadoras, seja em HTML, Python ou em qualquer outra linguagem. E comigo não foi diferente, durante o primeiro semestre da faculdade decidi fazer uma calculadora com a primeira linguagem que aprendi, a linguagem C.</p>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="container">
+			<div id="contatos">
+				<h3 class="contatos">Contate-me</h3>
+				<ul class="social">
+					<li><a href="mailto:marcosalexandredsa@gmail.com"><i class="fa fa-send"></i></a></li>
+					<li><a href="http://twitter.com/marcos4lex" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="http://github.com/marcos4lex" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li><a href="http://linkedin.com/in/marcos4lex" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</footer>
+
+
+
+		<!-- Javascript -->
+		<script src="js/jquery.js"></script>
+		<script src="js/typed.js"></script>
+		<script src="js/topicos.js"></script>
+	    <script>
+			function newTyped(){}$(function(){$("#typed").typed({
+			// Change to edit type effect
+			strings: ["Olá! Eu me chamo", "Marcos Alexandre", "Tenho 26 anos", "Sou do Rio de Janeiro"],
+
+			typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+	    </script>
+	</body>
+</html>

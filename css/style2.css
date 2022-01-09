@@ -1,0 +1,74 @@
+	/*ESTRUTURA DO SITE*/
+*,*:before,*:after{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}html,body,div,span,p,a,img,i,center,ol,ul,li,footer,header,menu,nav,h1{
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}.container{
+    margin:auto;
+    max-width:680px;
+    padding:0 20px
+}.section .container h1{
+    text-transform:uppercase;
+    margin-bottom:25px;
+    position:relative
+}.section .container:after{
+    position:absolute;
+    content:url(../img/separador.png);
+    left:20px
+}.section .container{
+    position:relative
+}.section.second{
+    margin-bottom:90px
+}.main-nav nav ul li.active a{	/*DEIXA O 'SOBRE' NA NAVEGAÇÃO ATIVA*/
+    color:#4d4d4d
+}.main-nav nav ul li a{
+    color:#a7a7a7
+}.main-nav{
+    background:#f4f4f4;
+    padding-top:23px
+}a,p,li{
+    font-family:"Lato",Arial,sans-serif;
+    color:#4e4e4e;
+    font-size:1em;
+    line-height:1.75em
+}h1{
+    font-family:"Playfair Display SC",serif;
+    color:#333
+}
+
+a:hover{
+    text-decoration:none !important;
+    color:#333 !important;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -ms-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+    transition:all 0.2s ease-in-out
+}
+
+	/*FORMATAÇÃO DA DESCRIÇÃO DOS TOPICOS*/
+.skills .skill-list{
+    margin-left:0px
+}
+
+.skills .skill-list li:first-child{
+    font-size:0.9375em;
+    color:#8c8c8c
+}
+
+
+	/*MODIFICA POSIÇÃO NOME PRINCIPAL E CONTATOS*/
+.units-row .unit-80,
+.units-row .unit-50,
+.units-row .unit-20{
+	float:left;
+	margin-left:3%;
+}
