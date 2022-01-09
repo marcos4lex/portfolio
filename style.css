@@ -28,6 +28,18 @@
     color:#a7a7a7;
 }
 
+.fa-arrow-up:before{
+    content:"\f062";
+    background-color: #CDCDCF;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px #333;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+}
+
 .avatar,.welcome{
 	float:left;
 	margin-left:3%;
