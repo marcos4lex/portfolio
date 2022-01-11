@@ -3,29 +3,31 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}a:hover{
+}body{
+    font-size: 100%;
+    background-color: white;
+}.main{
+    margin-top:160px;
+}
+
+
+a:hover{
     text-decoration:none;
     color:#333 !important;
 }
 
 	/*FORMATAÇÃO DA NAVEGAÇÃO*/
 .navbar{
-	margin:auto;
-	margin-bottom:160px;
-	color:#a7a7a7;
-	clear:both;
-	background:#f4f4f4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     padding-top:23px;
-}.navbar ul{
-	list-style:none;
-	margin:0;
-}.navbar li{
-	float:left;
-	margin-right:1.65em;
-}.navbar ul li.sobre a{
-    color:#4d4d4d;
-}.navbar ul li a{
-    color:#a7a7a7;
+}.list-nav{
+    margin-right: 26.5px;
+    color:#8E8F90;
+}
+.sobre{
+    color:#333;
 }
 
 .fa-arrow-up:before{
