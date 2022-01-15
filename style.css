@@ -107,7 +107,7 @@ a{
 
 /* AREA DAS TECNOLOGIAS*/
 .tec-link,.tec-link-css,.tec-link-git,.tec-link-html,.tec-link-linux {
-  padding: 1rem;
+  padding: 8px;
   margin-left: 1rem;
   border: 2px solid #f5ba09;
   border-radius: 0.5rem;
