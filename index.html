@@ -1,126 +1,284 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-	<head>
-		<title>Marcos Alexandre by @marcos4lex</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css">
-	    <link rel="shortcut icon" href="img/icon.png">
-	    <link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-	</head>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-				<!-- NAVEVAÇÃO -->
-	<body>
-		
-		<header class="container">
-			<nav id="navegacao" class="navbar">
-				<a class="sobre list-nav" href="#sobre">Sobre</a>
-				<a class="list-nav" href="#experiencias">Experiências</a>
-				<a class="list-nav" href="#habilidades">Habilidades</a>
-				<a class="list-nav" href="#projetos">Projetos</a>
-				<a class="list-nav" href="#contatos">Contate-me</a>
-			</nav>						
-		</header>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
-		<main>
-				<!-- INTRODUÇÃO -->
-			<section class="container separador" id="sobre">
-				<div class="avatar">
-					<img src="img/avatar.jpg" alt="avatar">
-				</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
-				<div class="welcome">
-					<h1>Sejam bem vindos!<br><span id="typed"></span></h1>
-				</div>
-					<p>
-						Venho colecionando conhecimento técnico desde meus 14 anos, aprendendo na prática a utilizar sistemas Linux e Windows. já participei de feiras sobre segurança da informação, bootcamps sobre front-end, e muito mais. Até trabalhar como técnico em informática aos 19 anos. Então iniciei minha graduação no início do ano de 2021 afim de profissionalizar todo esse conhecimento, e hoje tenho projetos contínuos em Linguagem C e Webdesign.
-					</p>
-			</section>
+    <link rel="stylesheet" href="style.css" />
 
-			<a href="#navegacao"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet"/>
+
+    <title>Portfólio - Marcos Alexandre</title>
+  </head>
 
 
-				<!--EXPERIENCIAS-->
-			<section class="container separador" id="experiencias">
-				<h1>Experiências</h1><br>
-				<ul class="lista-trabalho">
-					<li>2014-2019</li>
-					<li><a href="#">Tec. em Informática</a></li><br>
-				</ul>
-				<p>
-					Atividades Realizadas:<br>
-					Gerenciamento de compra e venda de hardware pelo Excel.
-					Reparo de desktops e notebooks, realizando troca de hardware defeituoso e instalação de programas.
-					Diagnóstico de problemas no sistema e remoção de programas maliciosos.
-					Orientação de clientes sobre cuidados preventivos e manutenção regular para evitar falhas de funcionamento do sistema.
-					Instalação de sistemas Windows e Linux.
-				</p>
-			</section>
-			
+  <body>
+    <div class="container navigation pt-3">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <i class="fas fa-code fa-2x text-warning pb-3"></i>
+          <h5 class="d-inline pl-2 text-white">Portfólio</h5>
+        </div>
+        <div class="col-6 pt-2">
+          <div class="row text-center p-0 d-flex justify-content-end align-items-center">
+            <div class="col-3">
+              <a href="#about" class="text-white navigation-link">Sobre</a>
+            </div>
+            <div class="col-3">
+              <a href="#projects" class="text-white navigation-link">Projetos</a>
+            </div>
+            <div class="col-3">
+              <a href="#midias-sociais" class="text-white navigation-link">Mídias Sociais</a>
+            </div>
+            <div class="col-3">
+              <a href="#" target="_blank" class="text-white navigation-link">Curriculo</a> 
+              <!--substitua o href pelo curriculo-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Main Container -->
+    <div class="welcome">
+      <div class="row main_row">
+        <div class="apresentacao">
+          <h2 class="text-white">Olá! Eu sou</h2>
+          <h1 class="text-warning m-heading">Marcos Alexandre</h1>
+          <h2 class="text-white">Programador &<br> Desenvolvedor Web</h2>
+        </div>
+        <div class="foto1">
+          <img src="images/foto.jpg" class="foto"/>
+        </div>
+      </div>
+    </div>
 
-				<!-- HABILIDADES TECNICAS -->
-			<section class="container separador" id="habilidades">
-				<h1>Habilidades<br>Técnicas</h1>
-				<ul class="lista-habilidades">
-					<li>Tecnologias Web</li>
-					<p>HTML / CSS / Javascript</p><br><br>
-					
-					<li>Banco de Dados</li>
-					<p>MySQL / PostgreSQL</p><br><br>
-					
-					<li>Linguagens de Programação</li>
-					<p>Linguagem C</p><br><br>
-					
-					<li>Outras</li>
-					<p>Comandos de navegação no terminal Linux<br>
-					Montagem e manutenção de desktops</p>		
-				</ul>
-			</section>
+    <!-- About Section -->
+    <div id="about" class="container about p-3">
+      <div class="row">
+        <div class="col-6">
+          <img src="./images/about_img.gif" class="img-fluid sobre-img">
+        </div>
+        <div class="col-6 pl-5 pt-5 pb-5 text-white sobre-mim">
+          <h1 class="text-warning">Sobre mim</h1>
+          <p>
+            Venho colecionando conhecimento técnico desde meus 14 anos, aprendendo na prática a utilizar sistemas <b class="text-warning">Linux (comandos de navegação no bash)</b> e Windows. já participei de <b class="text-warning">feiras online sobre segurança da informação utilizando kali linux</b>, Office, e muito mais. Até trabalhar como autônomo de técnico em informática aos 19 anos.  
+          </p>
+          <br />
+          <p>E hoje, além de estar graduando em ADS afim de profissionalizar todo esse conhecimento, tenho projetos contínuos na Linguagem C e Webdesign. E também participo de um <b class="text-warning">bootcamp sobre front-end</b> patrocinado pelo <b class="text-warning">banco Inter</b> na <b class="text-warning">Digital Innovation One</b>. E sigo em busca de novos desafios e experiências que acrescentem à minha formação.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <!-- Seção das Tecnologias -->
+    <div id="tecnologias" class="container-fluid mt-5">
+      <div class="container text-white py-4 justify-content-start">
+        <h1 class="text-warning text-center tecnologias">Tecnologias & Ferramentas</h1>
+        <div class="row">
+          <div class="col-3 tec-link-html bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">HTML</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-html5 fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-3 tec-link-css bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">CSS</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-css3-alt fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
 
-				<!-- PROJETOS -->
-			<section class="container separador" id="projetos">
-				<ul class="lista-projetos">
-					<h1>Projetos</h1>
-					<li>Site Portfólio</li>
-					<p>A produção deste site faz parte do meu primeiro projeto após concluir muitas aulas da faculdade. Ele foi projetado usando HTML e CSS básicos e um pouquinho de Javascript.</p><br><br>
+          <div class="col-3 tec-link bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">Javascript</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-js fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
 
-					<li>Sheldon Mania</li>
-					<p>Por ser muito fã da serie de tv The Bigbang Theory, decidi fazer algo que remetesse a serie. Um jogo feito na Linguagem C, mas idealizado por Sam Kass (jogado pelos participantes da serie), o jogo Pedra-papel-tesoura-lagarto-Spock é uma expansão do clássico método de seleção em jogo de pedra-papel-tesoura. Atua sob o mesmo princípio básico, mas inclui outras duas armas adicionais: o lagarto e Spock.</p><br><br>
+          <div class="col-3 tec-link bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">Bootstrap</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-bootstrap fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
 
-					<li>Calculadora</li>
-					<p>Já é sabido que é muito comum no mundo da programação treinar a criação de calculadoras, seja em HTML, Python ou em qualquer outra linguagem. E comigo não foi diferente, durante o primeiro semestre da faculdade decidi fazer uma calculadora com a primeira linguagem que aprendi, a linguagem C.</p>
-				</ul>
-			</section>
-		</main>
+          <div class="col-3 tec-link-linux bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">Linux</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-linux fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
 
-		<footer class="container">
-			<div id="contatos">
-				<h3 class="contatos">Contate-me</h3>
-				<ul class="social">
-					<li><a href="mailto:marcosalexandredsa@gmail.com"><i class="fa fa-send"></i></a></li>
-					<li><a href="http://twitter.com/marcos4lex" target="_blank"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="http://github.com/marcos4lex" target="_blank"><i class="fa fa-github"></i></a></li>
-					<li><a href="http://linkedin.com/in/marcos4lex" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-				</ul>
-			</div>
-		</footer>
+          <div class="col-3 tec-link-git bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">Git</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-git-alt fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Seção dos Projetos -->
+    <div id="projects" class="container mt-4 pt-2">
+      <h1 class="projetos text-warning text-center mt-5 pt-3 py-2">Meus Projetos</h1>
+      <h2 class="text-warning linguagem-c mt-5">Linguagem C</h2>
+      <div class="row">
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/jogo.png" class="card-img-top" style="height: 16rem;" alt="..."/>
+            <div class="card-body">
+              <h5 class="card-title">Mini jogo para pc</h5>
+              <p class="card-text">O jogo Pedra-papel-tesoura-lagarto-Spock, <b>feito em linguagem C</b>, é uma expansão do clássico método de seleção em jogo de pedra-papel-tesoura. Atua sob o mesmo princípio básico, mas inclui outras duas armas adicionais: o lagarto e Spock. 
+              </p>
+              <a href="https://github.com/marcos4lex/sheldon-mania" target="_blank" class="btn btn-warning">Veja o projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/calculadora.png"
+              class="card-img-top img-fluid"
+              alt="..."
+              style="height: 16rem;">
+            <div class="card-body">
+              <h5 class="card-title">Calculadora</h5>
+              <p class="card-text">A calculadora foi meu primeiro projeto inteiramente feita na linguagem C, afim de treinar alguns conceitos básicos da limguagem e aprimora-los conforme o passar do tempo.<br><b>ps: Imagem meramente ilustrativa.</b>
+              </p>
+              <a href="https://github.com/marcos4lex/calculadora" target="_blank" class="btn btn-warning">Veja o projeto</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/bg-content.jpg" class="card-img-top" alt="..." style="height: 13rem;"/>
+            <div class="card-body">
+              <h5 class="card-title">Título a ser incluido</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolores ducimus culpa quibusdam inventore, animi consequatur reprehenderit beatae quis sunt praesentium tempora reiciendis iusto, repudiandae doloremque hic consectetur nemo laborum.
+              </p>
+              <a href="#" class="btn btn-warning">Veja Projeto</a>
+            </div>
+          </div>
+        </div>
 
+        <h2 class="text-warning webdesign container mt-3 pt-3">Web Design</h2>
+        
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/site-1.png"
+              class="card-img-top"
+              alt="..."
+              style="height: 16rem;"/>
+            <div class="card-body">
+              <h5 class="card-title">Primeiro site-portfólio</h5>
+              <p class="card-text">
+                A produção deste site-portfólio faz parte do meu primeiro projeto após concluir parte do bootcamp front-end Inter pela Digital Innovation One. Ele foi projetado usando <b>HTML/CSS</b> e <b>Bootstrap</b>.
+              </p>
+              <a href="#" class="btn btn-warning">Veja o projeto</a>
+            </div>
+          </div>
+        </div>
 
-		<!-- Javascript -->
-		<script src="js/jquery.js"></script>
-		<script src="js/typed.js"></script>
-		<script src="js/topicos.js"></script>
-	    <script>
-			function newTyped(){}$(function(){$("#typed").typed({
-			// Change to edit type effect
-			strings: ["Olá! Eu me chamo", "Marcos Alexandre", "Tenho 26 anos", "Sou do Rio de Janeiro"],
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/bg-content.jpg" class="card-img-top" alt="..." style="height: 13rem;">
+            <div class="card-body">
+              <h5 class="card-title">Título a ser incluido</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolores ducimus culpa quibusdam inventore, animi consequatur reprehenderit beatae quis sunt praesentium tempora reiciendis iusto, repudiandae doloremque hic consectetur nemo laborum.
+              </p>
+              <a href="#" class="btn btn-warning">Veja Projeto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-			typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
-	    </script>
-	</body>
+    <!-- Seção das Mídias Sociais -->
+    <div id="midias-sociais">
+      <div class="container text-white py-3">
+        <h2 class="m-heading text-warning text-center">Mídias Sociais</h2>
+        <div class="row pt-3 justify-content-center">
+          <div class="col-3 media_link bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h4 class="m-0 pt-2 text-dark">LinkedIn</h4>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h4 class="m-0 pt-2 text-dark">Github</h4>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-github fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h4 class="m-0 pt-2 text-dark">Email</h4>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fas fa-envelope fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h5>
+          Feito por <a class="text-warning text-decoration-none" href="#about">Marcos Alexandre</a>
+        </h5>
+      </div>
+    </footer>
+  </body>
 </html>
