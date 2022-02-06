@@ -4,267 +4,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/jpg" href="assets/img/programing.png">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="style.css" />
-
-    <script src="https://kit.fontawesome.com/996973c893.js"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap" rel="stylesheet"/>
-
-    <title>Portfólio - Marcos Alexandre</title>
+    <title>Marcos Alexandre</title>
   </head>
+    <body>
+      <!--===== HEADER =====-->
+      <header class="l-header">
+        <nav class="nav bd-grid">
 
-
-  <body>
-    <div class="container navigation pt-3">
-      <div class="row">
-        <div class="col-6 d-flex justify-content-start align-items-center">
-          <i class="fas fa-code fa-2x text-warning pb-3"></i>
-          <h5 class="d-inline pl-2 text-white">Portfólio</h5>
-        </div>
-        <div class="col-6 pt-2">
-          <div class="row text-center p-0 d-flex justify-content-end align-items-center">
-            <div class="col-3">
-              <a href="#sobre" class="text-white navigation-link">Sobre</a>
-            </div>
-            <div class="col-3">
-              <a href="#projetos" class="text-white navigation-link">Projetos</a>
-            </div>
-            <div class="col-3">
-              <a href="#midias-sociais" class="text-white navigation-link">Mídias Sociais</a>
-            </div>
-            <div class="col-3">
-              <a href="#" target="_blank" class="text-white navigation-link">Curriculo</a>
-            </div>
+          <div>
+            <a href="#" class="nav__logo">Marcos Alexandre</a>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Main Container -->
-    <div class="welcome">
-      <div class="row main_row">
-        <div class="apresentacao">
-          <h2 class="text-white">Olá! Eu sou</h2>
-          <h1 class="text-warning m-heading">Marcos Alexandre</h1>
-          <h2 class="text-white">Programador &<br> Desenvolvedor Web</h2>
-        </div>
-        <div class="foto1">
-          <img src="images/foto.jpg" class="foto"/>
-        </div>
-      </div>
-    </div>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#inicio" class="nav__link active">Inicio</a></li>
+              <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+              <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+              <li class="nav__item"><a href="#trabalhos" class="nav__link">Trabalhos</a></li>
+              <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+            </ul>
+          </div>
 
-    <!-- Seção Sobre -->
-    <div id="sobre" class="container about p-3">
-      <div class="row">
-        <div class="col-6">
-          <img src="./images/about_img.gif" class="img-fluid sobre-img">
-        </div>
-        <div class="col-6 pl-5 pt-5 pb-5 text-white sobre-mim">
-          <h1 class="text-warning">Sobre mim</h1>
-          <p>
-            Venho colecionando conhecimento técnico desde meus 14 anos, aprendendo na prática a utilizar sistemas <b class="text-warning">Linux (comandos de navegação no bash)</b> e Windows. já participei de <b class="text-warning">feiras online sobre segurança da informação utilizando kali linux</b>, Office, e muito mais.<br> Até trabalhar como autônomo de técnico em informática aos 19 anos.  
-          </p>
-          <br />
-          <p>E hoje, além de estar graduando em ADS afim de profissionalizar todo esse conhecimento, tenho projetos contínuos na Linguagem C e Webdesign. E também participo de um <b class="text-warning">bootcamp sobre front-end</b> patrocinado pelo <b class="text-warning">banco Inter</b> na <b class="text-warning">Digital Innovation One</b>. E sigo em busca de novos desafios e experiências que acrescentem à minha formação.
-          </p>
-        </div>
-      </div>
-    </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+          </div>
+        </nav>
 
-    <!-- Seção das Tecnologias -->
-    <div id="tecnologias" class="container-fluid mt-5">
-      <div class="container text-white py-4 justify-content-start">
-        <h2 class="text-warning text-center tecnologias">Tecnologias & Ferramentas</h2>
-        <div class="row justify-content-center">
-          <div class="col-3 tec-link-html bg-warning">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark">HTML</h3>
+        </header>
+
+        <main class="l-main">
+          <!--===== HOME =====-->
+          <section class="home bd-grid" id="inicio">
+            <div class="home__data">
+              <h1 class="home__title">Olá!<br>Eu sou <span class="home__title-color">Marcos</span>,<br> Programador <span class="home__title-color">&</span><br>Web Designer</h1>
+
+              <a href="#sobre" class="button" style="margin-right: 15px;">Sobre mim</a>
+              <a download="" href="/assets/cv.pdf" class="button_download">Download CV</a>
+            </div>
+
+            <div class="home__social">
+              <a href="https://linkedin.com/in/marcos4lex" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+              <a href="https://twitter.com/marcos4lex"  target="_blank" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+              <a href="https://github.com/marcos4lex"  target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home__img">
+              <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask0" mask-type="alpha">
+                  <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                </mask>
+                
+                <g mask="url(#mask0)">
+                  <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                  <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                </g>
+              </svg>
+            </div>
+          </section>
+
+          <!--===== ABOUT =====-->
+          <section class="about section " id="sobre">
+            <h3 class="section-title">Sobre</h3>
+
+            <div class="about__container bd-grid">
+              <div class="about__img">
+                <img src="assets/img/about.jpg" alt="">
               </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-html5 fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
+                        
+              <div>
+                <h2 class="about__subtitle">Eu sou Marcos Alexandre,</h2>
+                <p class="about__text">tenho 26 anos, estou graduando em Análise e Desenvolvimento de Sistemas e sou natural do Rio de Janeiro. Sou louco por tecnologia, astronomia, e outras ciências; gosto de livros, filmes e séries de ficção científica e aventura.<br><br>
+                
+                &nbsp Eu sempre fui alguém muito curioso e super enérgico quando se trata de tecnologias, não é atoa que com 14 anos eu aprendi na prática montagem e manutenção de desktops; a utilizar os sistemas Linux, Windows e suas ferramentas; e segurança da informação.<br><br>
 
-          <div class="col-3 tec-link-css bg-warning">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark">CSS</h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-css3-alt fa-2x text-secondary"></i>
-              </div>
+                &nbsp No geral, eu gosto de trocar experiências, e desafios que acrescentem à minha formação. E sempre tive o sonho de um dia poder criar uma solução; uma ideia; um projeto, seja ele qual for, que mude a vida das pessoas para melhor.</p>           
+              </div>                                   
             </div>
-          </div>
+          </section>
 
-          <div class="col-3 tec-link bg-warning">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark">Javascript</h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-js fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
+          <!--===== SKILLS =====-->
+          <section class="skills section" id="habilidades">
+            <h3 class="section-title">Habilidades</h3>
 
-          <div class="col-3 tec-link bg-warning">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark">Bootstrap</h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-bootstrap fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
+            <div class="skills__container bd-grid">          
+              <div>
+                <h2 class="skills__subtitle">Tecnologias e Ferramentas</h2>
+                <p class="skills__text">Essas são umas das muitas tecnologias e ferramentas que venho estudando e me aperfeiçoando com o tempo, seja na faculdade ou em bootcamps.</p>
+                
+                <div class="tech">
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <i class='bx bxl-html5 skills__icon' style="color: #E34C1C;"></i>
+                      <span class="skills__name">HTML5</span>
+                    </div>                  
+                    <div class="skills__bar skills__html"></div>
+                  </div>
+                  
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <i class='bx bxl-css3 skills__icon'></i>
+                      <span class="skills__name">CSS3</span>
+                    </div>                  
+                    <div class="skills__bar skills__css"></div>
+                  </div>
+                  
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <i class='bx bxl-javascript skills__icon' style="color: #FFC81E;"></i>
+                      <span class="skills__name">JAVASCRIPT</span>
+                    </div>                  
+                    <div class="skills__bar skills__js"></div>
+                  </div>
 
-          <div class="col-3 tec-link-linux bg-warning">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark">Linux</h3>
-              </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-linux fa-2x text-secondary"></i>
-              </div>
-            </div>
-          </div>
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <span class="iconify skills__icon" style="color: #7211F5;" data-icon="simple-icons:bootstrap"></span>
+                      <span class="skills__name">Bootstrap</span>
+                    </div>                
+                    <div class="skills__bar skills__bt"></div>
+                  </div>
+                  
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <span class="iconify skills__icon" data-icon="logos:c"></span>
+                      <span class="skills__name">C</span>
+                    </div>                
+                    <div class="skills__bar skills__C"></div>
+                  </div>
 
-          <div class="col-3 tec-link-git bg-warning">
-            <div class="row">
-              <div class="col-6 d-flex justify-content-start">
-                <h3 class="m-0 pt-2 text-dark">Git</h3>
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <span class="iconify skills__icon" data-icon="grommet-icons:mysql"></span>
+                      <span class="skills__name">MySQL</span>
+                    </div>                
+                    <div class="skills__bar skills__sql"></div>
+                  </div>
+
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <span class="iconify skills__icon" style="color: #E84D31;" data-icon="bi:git"></span>
+                      <span class="skills__name">Git</span>
+                    </div>                
+                    <div class="skills__bar skills__git"></div>
+                  </div>
+
+                  <div class="skills__data">
+                    <div class="skills__names">
+                      <span class="iconify skills__icon" data-icon="fa-brands:linux"></span>
+                      <span class="skills__name">Linux</span>
+                    </div>                
+                    <div class="skills__bar skills__linux"></div>
+                  </div>
+
+                </div>
               </div>
-              <div class="col-6 d-flex justify-content-end align-items-center">
-                <i class="fab fa-git-alt fa-2x text-secondary"></i>
+                        
+              <div>              
+                <img src="assets/img/about_img.gif" alt="" class="skills__img">
               </div>
             </div>
+          </section>
+
+          <!--===== WORK =====-->
+          <section class="work_section" id="trabalhos"
+          style="padding-top: 50px;">
+            <h3 class="section-title">Trabalhos</h3>
+            
+            <div class="work__container bd-grid img-work">
+              <a href="https://github.com/marcos4lex/sheldon-mania" target="_blank" class="work__img">
+              <img src="assets/img/c1.webp" alt=""></a>
+              <a href="https://github.com/marcos4lex/calculadora" target="_blank" class="work__img">
+              <img src="assets/img/c2.png" alt=""></a>
+            </div>
+            <div class="work-sections">
+              <h3 class="bd-grid">Linguagem C</h3>
+            </div>
+            
+            
+            <div class="work__container bd-grid img-work">
+              <a href="https://github.com/marcos4lex/login-form" target="_blank" class="work__img">
+              <img src="assets/img/wb1.png" alt=""></a>
+            </div>
+            <div class="work-sections">
+              <h3 class="bd-grid">Web Design</h3>
+            </div>
+            
+          </section>
+
+          <!--===== CONTACT =====-->
+          <section class="contact section" id="contato">
+            <h3 class="section-title">Vamos conversar?</h3>
+
+            <div class="contact__container">
+              <p>Apesar do pouco tempo que tenho devido aos meus estudos e projetos que tenho participado eu sempre encontro tempo disponível pra trocar experiências e discutir novas ideias, seja sobre projetos em desenvolvimento web ou programação. Me encontre nas redes sociais, ou envie-me um e-mail.</p>
+            </div>
+
+            <a href="mailto:marcosalexandredsa@gmail.com" class="contact__button button">Contate Me</a>     
+          </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+          <div class="bg-footer">
+            <div class="about__footer">
+              <h3>Sobre o portfólio</h3>
+              <p>A construção desde site faz parte de um dos muitos desafios propostos nos grupos de estudos que participo sobre desenvolvimento web. Nele eu pus em prática as habilidades que venho estudando ao longo do tempo.</p>
+            </div>
+  
+            <div class="about__footer links__footer">
+              <h3>Links</h3>
+              <ul class="about__links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#trabalhos">Trabalhos</a></li>
+              </ul>
+            </div>
+            
+            <div class="about__footer sociais__footer">
+              <h3>Sociais</h3>
+              <a href="https://linkedin.com/in/marcos4lex" target="_blank" class="footer__icon linkein"><i class='bx bxl-linkedin'></i></a>
+              <a href="https://www.github.com/marcos4lex/" target="_blank" class="footer__icon"><i class='bx bxl-github'></i></a>
+              <a href="https://www.twitter.com/marcos4lex" target="_blank" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+              <a href="mailto:marcosalexandredsa@gmail.com" class="footer__icon"><i class='bx bx-mail-send' ></i></a>
+            </div>
           </div>
+        </footer>
+
+        <div class="footer__bottom">
+          <p class="footer__copy">Designed by @marcos4lex</p>
         </div>
-      </div>
-    </div>
 
-    <!-- Seção dos Projetos -->
-    <div id="projetos" class="container mt-4 pt-2">
-      <h2 class="projetos text-warning text-center mt-5 pt-3 py-2">Meus Projetos</h2>
 
-      <h2 class="text-warning linguagem-c mt-5">Linguagem C</h2>
-      <div class="row">
+        <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-        <div class="col-4 mb-5">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/jogo.png" class="card-img-top" style="height: 16rem;" alt="..."/>
-            <div class="card-body">
-              <h5 class="card-title">Mini jogo para pc</h5>
-              <p class="card-text">O jogo Pedra-papel-tesoura-lagarto-Spock, <b>feito em linguagem C</b>, é uma expansão do clássico método de seleção em jogo de pedra-papel-tesoura. Atua sob o mesmo princípio básico, mas inclui outras duas armas adicionais: o lagarto e Spock. 
-              </p>
-              <a href="https://github.com/marcos4lex/sheldon-mania" target="_blank" class="btn btn-warning">Repositório</a>
-              <a href="https://replit.com/@marcos4lex/sheldon-mania#.replit" target="_blank" class="btn btn-warning">Veja rodando</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4 mb-5">
-
-          <div class="card" style="width: 18rem;">
-            <img src="./images/calculadora.png" class="card-img-top img-fluid" alt="..." style="height: 16rem;">
-            <div class="card-body">
-              <h5 class="card-title">Calculadora</h5>
-              <p class="card-text">A calculadora foi meu primeiro projeto inteiramente feita na linguagem C, afim de treinar alguns conceitos básicos da limguagem e aprimora-los conforme o passar do tempo.<br><b>ps: Imagem meramente ilustrativa.</b>
-              </p>
-              <a href="https://github.com/marcos4lex/calculadora" target="_blank" class="btn btn-warning">Repositório</a>
-              <a href="https://replit.com/@marcos4lex/calculadora#main.c" target="_blank" class="btn btn-warning">Veja rodando</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4 mb-5">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/bg-content.jpg" class="card-img-top" alt="..." style="height: 16rem;"/>
-            <div class="card-body">
-              <h5 class="card-title">Título a ser incluido</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. A dolores ducimus culpa quibusdam inventore, animi consequatur reprehenderit beatae quis sunt praesentium tempora reiciendis iusto, repudiandae doloremque hic consectetur nemo laborum.
-              </p>
-              <a href="#" class="btn btn-warning">Veja Projeto</a>
-            </div>
-          </div>
-        </div>
-
-        <h2 class="text-warning webdesign container mt-3 pt-3">Webdesign</h2>
-        
-        <div class="col-4 mb-5">
-          <div class="card" style="width: 18rem;">
-            <img
-              src="./images/site-1.png" class="card-img-top" alt="..." style="height: 16rem;"/>
-            <div class="card-body">
-              <h5 class="card-title">Portfólio</h5>
-              <p class="card-text">
-                A produção deste site-portfólio faz parte do meu primeiro projeto após concluir parte do bootcamp front-end Inter pela Digital Innovation One. Ele foi projetado usando <b>HTML/CSS</b> e <b>Bootstrap</b>.
-              </p>
-              <a href="https://github.com/marcos4lex/marcos4lex.github.io" target="_blank" class="btn btn-warning">Repositório</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4 mb-5">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/login-form.png" class="card-img-top" alt="..." style="height: 16rem;">
-            <div class="card-body">
-              <h5 class="card-title">Formulário de Login</h5>
-              <p class="card-text">Este é meu primeiro formulário de login feito em <b>HTML/CSS</b>. Nele eu adicionei dois inputs com email e senha, link para recuperar a senha e a possibilidade de fazer login usando suas redes.
-              </p>
-              <a href="https://github.com/marcos4lex/login-form" target="_blank" class="btn btn-warning">Repositório</a>
-              <a href="https://marcos4lex.github.io/login-form/" target="_blank" class="btn btn-warning">Veja o projeto</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4 mb-5">
-          <div class="card" style="width: 18.5rem;">
-            <img src="./images/starbucks-1.png" class="card-img-top;" alt="..." style="height: 16rem;padding-top: 2rem;"/>
-            <div class="card-body">
-              <h5 class="card-title">Starbucks</h5>
-              <p class="card-text">
-                Este é um desafio que foi proposto a mim afim de por em prática meus conhecimentos. Uma landing page simples do Starbucks usando pequenas animações em CSS, e Javascript básico. 
-              </p>
-              <a href="https://github.com/marcos4lex/Starbucks/" class="btn btn-warning">Repositório</a>
-              <a href="https://marcos4lex.github.io/Starbucks/" class="btn btn-warning">Veja Projeto</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Seção das Mídias Sociais -->
-    <div id="midias-sociais">
-      <div class="container text-white py-4">
-        <h3 class="text-warning text-center">Mídias Sociais</h3>        
-        <div class="row pt-3 justify-content-center sociais">
-          <a  href="https://linkedin.com/in/marcos4lex" target="_blank"><img class="linkedin" src="images/logo-linkedin.png" style="width: 50px;"></a>
-          <a href="https://github.com/marcos4lex" target="_blank"><img class="github" src="images/logo-github.png" style="width: 50px;"></a>
-          <a href="https://twitter.com/marcos4lex" target="_blank"><img class="twitter" src="images/logo-twitter.png" style="width: 50px;"></a>
-          <a href="mailto:marcosalexandredsa@gmail.com"><img class="email" src="images/logo-email.png" style="width: 50px;"></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container text-muted text-center py-3 mt-5">
-        <h5>
-          Feito por <a class="text-warning text-decoration-none" href="#about">Marcos Alexandre</a>
-        </h5>
-      </div>
-    </footer>
-  </body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
