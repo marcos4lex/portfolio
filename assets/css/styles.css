@@ -337,44 +337,23 @@ img {
   max-width: 200px;
 }
 
+.skills__linux, .skills__sql, .skills__css,
+.skills__git, .skills__bt, .skills__C, 
+.skills__js, .skills__html{
+  width: 100%;
+}
+
 .skills__html {
-  width: 100%;
   background-color: #E34C1C;
-}
-
-.skills__css {
-  width: 100%;
-}
-
-.skills__js {
-  width: 100%;
+}.skills__js {
   background-color: #FFC81E;
-}
-
-.skills__C {
-  width: 100%;
+}.skills__C {
   background-color: var(--programming-color);
-}
-
-.skills__linux{
-  width: 100%;
-}
-
-.skills__bt{
-  width: 100%;
+}.skills__bt{
   background-color: #7211F5;
-}
-
-.skills__sql{
-  width: 100%;
-}
-
-.skills__git{
-  width: 100%;
+}.skills__git{
   background-color: #E84D31;
-}
-
-.skills__img {
+}.skills__img {
   border-radius: .5rem;
 }
 
