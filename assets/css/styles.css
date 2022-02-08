@@ -275,7 +275,6 @@ img {
 /* ===== ABOUT =====*/
 .about__container {
   row-gap: 2rem;
-  text-align: center;
 }
 
 .about__subtitle {
@@ -294,7 +293,7 @@ img {
 /* ===== SKILLS =====*/
 .skills__container {
   row-gap: 2rem;
-  text-align: center;
+  text-align: initial;
 }
 
 .skills__subtitle {
