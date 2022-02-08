@@ -422,7 +422,7 @@ img {
 
 .contact .contact__button {
   align-items: center;
-  width: 145px;
+  width: 140px;
   cursor: pointer;
   margin-top: -25px;
   margin-bottom: 50px;
@@ -468,9 +468,14 @@ img {
 .footer__icon {
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 var(--mb-2);
+  margin: 0px var(--mb-2);
 }
+
 .footer__icon i:hover {
+  color: #3E6FF4;
+}
+
+.about__footer a:hover {
   color: #3E6FF4;
 }
 
