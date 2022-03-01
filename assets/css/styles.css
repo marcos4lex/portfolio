@@ -379,6 +379,10 @@ img {
   transform: scale(1.1);
 }
 
+.work_section{
+  padding-top: 50px;
+}
+
 /* ===== CONTACT =====*/
 .contact{    
   display: flex;
